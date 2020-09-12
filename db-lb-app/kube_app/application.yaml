@@ -52,7 +52,7 @@ node_templates:
       client_config: { get_input: kubernetes_client_config }
       validate_resource_status: { get_input: validate_status }
       file:
-        resource_path: resources.yaml
+        resource_path: resources/resources.yaml
         template_variables:
           WORDPRESS_DB_USER: { get_input: database_user }
           WORDPRESS_DB_PASSWORD: { get_input: database_password  }
